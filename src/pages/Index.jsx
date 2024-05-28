@@ -1,4 +1,4 @@
-import { Box, Container, Flex, Heading, SimpleGrid, Text, VStack } from "@chakra-ui/react";
+import { Box, Container, Flex, Heading, SimpleGrid, Text, VStack, Icon } from "@chakra-ui/react";
 import { FaChartLine, FaDollarSign, FaUsers } from "react-icons/fa";
 
 const MetricCard = ({ title, value, icon }) => (
@@ -12,7 +12,7 @@ const MetricCard = ({ title, value, icon }) => (
     display="flex"
     alignItems="center"
   >
-    <Box as={icon} size="24px" mr={4} />
+    <Icon as={icon} w={6} h={6} mr={4} />
     <Box>
       <Heading fontSize="xl">{title}</Heading>
       <Text mt={2}>{value}</Text>
@@ -23,7 +23,7 @@ const MetricCard = ({ title, value, icon }) => (
 const Index = () => {
   return (
     <Container maxW="container.xl" p={4}>
-      <Flex as="nav" bg="blue.500" color="white" p={4} mb={6} justifyContent="center">
+      <Flex as="nav" bg="blue.500" color="white" p={4} mb={6} justifyContent="space-between" alignItems="center">
         <Heading size="lg">Business Dashboard</Heading>
       </Flex>
       <VStack spacing={8}>
