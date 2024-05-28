@@ -1,4 +1,4 @@
-import { Box, Container, Flex, Heading, SimpleGrid, Stat, StatLabel, StatNumber, VStack } from "@chakra-ui/react";
+import { Box, Container, Flex, Heading, SimpleGrid, Stat, StatLabel, StatNumber, Text } from "@chakra-ui/react";
 import { FaDollarSign, FaShoppingCart, FaUsers } from "react-icons/fa";
 
 const Index = () => {
